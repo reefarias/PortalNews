@@ -2,9 +2,6 @@
 /* @var $this NoticiaController */
 /* @var $model Noticia */
 /* @var $form CActiveForm */
-
-//echo "<pre>"; print_r($model); echo "</pre>"; 
-//echo "<pre>"; print_r($autores); echo "</pre>";
 ?>
 
 <div class="form">
