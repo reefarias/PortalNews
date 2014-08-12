@@ -1467,3 +1467,25 @@ Stack trace:
 REQUEST_URI=/sistemas/PortalNews/index.php/site/login
 HTTP_REFERER=http://localhost/sistemas/PortalNews/index.php/site/login
 ---
+2014/08/12 17:58:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(270): CController->missingAction('administrador')
+#1 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(282): CController->run('administrador')
+#2 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('administrador/a...')
+#3 C:\xampp1.7.1\htdocs\sistemas\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp1.7.1\htdocs\sistemas\PortalNews\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sistemas/PortalNews/index.php/administrador/administrador/
+HTTP_REFERER=http://localhost/sistemas/PortalNews/index.php/administrador/admin
+---
+2014/08/12 17:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(270): CController->missingAction('administrador')
+#1 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(282): CController->run('administrador')
+#2 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('administrador/a...')
+#3 C:\xampp1.7.1\htdocs\sistemas\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp1.7.1\htdocs\sistemas\PortalNews\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sistemas/PortalNews/index.php/administrador/administrador/
+HTTP_REFERER=http://localhost/sistemas/PortalNews/index.php/administrador/admin
+---

@@ -35,12 +35,26 @@
 					//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 					//array('label'=>'Contact', 'url'=>array('/site/contact')),
 					
-					array('label'=>'Administrador',	'url'=>array('/administrador/admin'),	'visible'=>!Yii::app()->user->isGuest,	'active'=>Yii::app()->controller->id=='administrador'),
-					array('label'=>'Categoria', 	'url'=>array('/categoria/admin'), 		'visible'=>!Yii::app()->user->isGuest,	'active'=>Yii::app()->controller->id=='categoria'),
-					array('label'=>'Noticia', 		'url'=>array('/noticia/admin'), 		'visible'=>!Yii::app()->user->isGuest,	'active'=>Yii::app()->controller->id=='noticia'),
+					array('label' => 'Administrador', 'items' => array(
+						array('label' => 'Manage', 	'url' => array('/administrador/admin')),
+						array('label' => 'List', 	'url' => array('/administrador')),
+						array('label' => 'Create', 	'url' => array('/administrador/create')),
+					), 'visible'=>!Yii::app()->user->isGuest, 'active'=>Yii::app()->controller->id=='administrador'),
 					
+					array('label' => 'Categoria', 'items' => array(
+						array('label' => 'Manage', 	'url' => array('/categoria/admin')),
+						array('label' => 'List', 	'url' => array('/categoria')),
+						array('label' => 'Create', 	'url' => array('/categoria/create')),
+					), 'visible'=>!Yii::app()->user->isGuest, 'active'=>Yii::app()->controller->id=='categoria'),
+					
+					array('label' => 'Noticia', 'items' => array(
+						array('label' => 'Manage', 	'url' => array('/noticia/admin')),
+						array('label' => 'List', 	'url' => array('/noticia')),
+						array('label' => 'Create', 	'url' => array('/noticia/create')),
+					), 'visible'=>!Yii::app()->user->isGuest, 'active'=>Yii::app()->controller->id=='noticia'),
+	                
 					//array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 	            ),
 	        ),
 	    ),

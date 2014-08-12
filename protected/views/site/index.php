@@ -2,6 +2,10 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
+
+$this->breadcrumbs=array(
+	'Home',
+);
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
