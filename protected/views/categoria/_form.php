@@ -4,7 +4,7 @@
 /* @var $form TbActiveForm */
 ?>
 
-<div class="form">
+<?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
 
     <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'categoria-form',
@@ -13,9 +13,9 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
-)); ?>
+	)); ?>
 
-    <p class="help-block">Fields with <span class="required">*</span> are required.</p>
+    <p class="help-block">Fields with <span class="required">*</span> are required.</p><br>
 
     <?php echo $form->errorSummary($model); ?>
 
@@ -30,4 +30,4 @@
     
     <?php $this->endWidget(); ?>
 
-</div><!-- form -->
+<?php echo TbHtml::endForm(); ?>

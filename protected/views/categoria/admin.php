@@ -54,6 +54,7 @@ $('.search-form form').submit(function(){
 	        ),
 	        array(
 				'class'=>'bootstrap.widgets.TbButtonColumn',
+	        	'htmlOptions'=>array('style'=>'width: 50px'),
 			),
 	    ),
 	)); 
