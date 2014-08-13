@@ -8,7 +8,7 @@
 	</div>
 	
 	<div class="span3">
-		<div class="well" style="padding: 8px 0; margin-left:0;">
+		<div class="well" style="padding: 8px 0; margin-left:0; position:relative; float:right; width:220px;">
 			<?php echo TbHtml::navList(
 		    	array(
 		    		array('label' => 'Operations'),
