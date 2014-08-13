@@ -1489,3 +1489,24 @@ Stack trace:
 REQUEST_URI=/sistemas/PortalNews/index.php/administrador/administrador/
 HTTP_REFERER=http://localhost/sistemas/PortalNews/index.php/administrador/admin
 ---
+2014/08/13 11:17:15 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldControlGroup".' in C:\xampp1.7.1\htdocs\sistemas\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('textFieldContro...', Array)
+#1 C:\xampp1.7.1\htdocs\sistemas\PortalNews\protected\views\site\login.php(28): CActiveForm->textFieldControlGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CBaseController.php(126): require('C:\xampp1.7.1\h...')
+#3 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp1.7.1\h...', Array, true)
+#4 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp1.7.1\h...', Array, true)
+#5 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#6 C:\xampp1.7.1\htdocs\sistemas\PortalNews\protected\controllers\SiteController.php(105): CController->render('login', Array)
+#7 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp1.7.1\htdocs\sistemas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp1.7.1\htdocs\sistemas\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp1.7.1\htdocs\sistemas\PortalNews\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sistemas/PortalNews/index.php/site/login
+HTTP_REFERER=http://localhost/sistemas/PortalNews/index.php/categoria
+---

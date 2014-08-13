@@ -11,10 +11,9 @@ $this->breadcrumbs=array(
 
 <h1>Login</h1>
 
-<p>Please fill out the following form with your login credentials:</p>
+<?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
@@ -22,32 +21,20 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+<p>Please fill out the following form with your login credentials:</p>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
+<p class="note">Fields with <span class="required">*</span> are required.</p><br>	
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
+<?php echo $form->textFieldControlGroup($model,'username',array('span'=>3,'maxlength'=>200)); ?>
+<?php echo $form->textFieldControlGroup($model,'password',array('span'=>3,'maxlength'=>200)); ?>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
+<div class="form-actions">
+	<?php echo TbHtml::submitButton('Login',array(
+	    'color'=>TbHtml::BUTTON_COLOR_PRIMARY,
+	    'size'=>TbHtml::BUTTON_SIZE_DEFAULT,
+	)); ?>
+</div>
 
 <?php $this->endWidget(); ?>
-</div><!-- form -->
+
+<?php echo TbHtml::endForm(); ?>

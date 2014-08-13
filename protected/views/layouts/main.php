@@ -74,7 +74,7 @@
 
 	<?php echo $content; ?>
 
-	<hr>
+	<hr style="margin:0px;">
 	
 	<div id="footer" style="margin: 20px 0;">
 		Copyright &copy; <?php echo date('Y'); ?> by Fernando Sanches.<br/>
