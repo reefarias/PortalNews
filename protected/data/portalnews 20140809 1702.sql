@@ -43,7 +43,7 @@ CREATE TABLE `administrador` (
 INSERT INTO `administrador` (`id`,`nome`,`email`,`login`,`senha`) VALUES 
  (1,'teste','teste','teste','teste'),
  (2,'Fernando','ferbs89@gmail.com','fernando.sanches','1605'),
- (3,'Renan','renan.farias','renan.farias','1234');
+ (3,'Renan','renan.rfarias@gmail.com','renan.farias','1234');
 /*!40000 ALTER TABLE `administrador` ENABLE KEYS */;
 
 
